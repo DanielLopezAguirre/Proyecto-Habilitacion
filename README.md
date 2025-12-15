@@ -1,82 +1,70 @@
-# Sistema de Gestión de Seguridad Minera
+Sistema de Gestión de Seguridad Minera
 
-Proyecto desarrollado como parte de la **habilitación de Programación Orientada a Objetos (POO)**.
+Proyecto desarrollado como parte de la habilitación de Programación Orientada a Objetos (POO).
 
-El sistema permite gestionar información relacionada con trabajadores, evaluaciones médicas, incidentes/accidentes y supervisores, aplicando el patrón **Modelo–Vista–Controlador (MVC)**.
+El sistema permite gestionar información relacionada con trabajadores, evaluaciones médicas, incidentes o accidentes y supervisores, utilizando el patrón Modelo Vista Controlador (MVC).
 
----
+Arquitectura del sistema
 
-## 🧱 Arquitectura
+El proyecto está organizado bajo el patrón MVC.
 
-El proyecto está estructurado bajo el patrón **MVC**:
+Modelo:
+Incluye las clases Trabajador, EvaluacionMedica, IncidenteAccidente y Supervisor.
+La clase GestorM se encarga de la lógica del negocio y la administración de los datos.
 
-- **Modelo (`modelo`)**
-  - Contiene las clases de dominio:
-    - `Trabajador`
-    - `EvaluacionMedica`
-    - `IncidenteAccidente`
-    - `Supervisor`
-  - Incluye la clase `GestorM`, encargada de la lógica del negocio y la gestión de datos.
+Vista:
+Las interfaces gráficas fueron desarrolladas en Java Swing usando NetBeans.
+Incluye las ventanas JFPrincipal, JFTrabajadores, JFEvaluacionesMedicas, JFAccidentes y JFSupervisores.
 
-- **Vista (`vista`)**
-  - Interfaces gráficas desarrolladas con **Java Swing** y **NetBeans GUI Builder**:
-    - `JFPrincipal`
-    - `JFTrabajadores`
-    - `JFEvaluacionesMedicas`
-    - `JFAccidentes`
-    - `JFSupervisores`
+Controlador:
+La clase Controlador gestiona los eventos generados por las vistas y coordina la comunicación con el modelo.
 
-- **Controlador (`control`)**
-  - Clase `Controlador`
-  - Gestiona los eventos de las vistas y coordina la comunicación con el modelo.
+Funcionalidades principales
 
----
+Gestión de trabajadores:
+Registro de trabajadores
+Eliminación de trabajadores
+Consulta por nombre, identificación y cargo
+Actualización de información
 
-## ⚙️ Funcionalidades
+Gestión de evaluaciones médicas:
+Registro de evaluaciones médicas
+Consulta de evaluaciones por trabajador
+Actualización de evaluaciones médicas
 
-### Trabajadores
-- Registrar trabajador
-- Borrar trabajador
-- Consultar información por:
-  - Nombre
-  - ID
-  - Cargo
-- Actualizar información
+Gestión de incidentes o accidentes:
+Registro de incidentes y accidentes
+Actualización de incidentes
+Consulta por tipo, fecha y trabajador
 
-### Evaluaciones Médicas
-- Registrar evaluación médica
-- Consultar evaluaciones por trabajador
-- Actualizar evaluación médica
+Gestión de supervisores:
+Registro de supervisores
+Actualización de supervisores
+Búsqueda por nombre y cargo
 
-### Incidentes / Accidentes
-- Registrar incidente o accidente
-- Actualizar incidente
-- Consultar por:
-  - Tipo
-  - Fecha
-  - Trabajador
+Tecnologías utilizadas
 
-### Supervisores
-- Registrar supervisor
-- Actualizar supervisor
-- Buscar por:
-  - Nombre
-  - Cargo
+Lenguaje Java
+Java Swing
+NetBeans
+Git y GitHub
 
----
+Ejecución del proyecto
 
-## 🛠️ Tecnologías utilizadas
+El proyecto se ejecuta desde la clase principal HabilitacionPOO1_1152525.
+Al iniciar la aplicación se muestra la ventana principal desde donde se accede al resto de funcionalidades.
 
-- **Java**
-- **Java Swing**
-- **NetBeans**
-- **Git / GitHub**
+Conceptos aplicados
 
----
+Programación Orientada a Objetos
+Encapsulamiento
+Uso de listas dinámicas con ArrayList
+Patrón Modelo Vista Controlador
+Manejo de eventos con ActionListener
+Separación de responsabilidades
 
-## ▶️ Ejecución
+Autor
 
-1. Abrir el proyecto en **NetBeans**
-2. Ejecutar la clase:
-   ```java
-   HabilitacionPOO1_1152525
+Daniel
+Estudiante de Programación Orientada a Objetos
+Trabajo de habilitación académica
